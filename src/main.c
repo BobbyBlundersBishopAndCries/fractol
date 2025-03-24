@@ -6,7 +6,7 @@
 /*   By: mohabid <mohabid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 04:02:56 by mohabid           #+#    #+#             */
-/*   Updated: 2025/03/22 16:50:58 by mohabid          ###   ########.fr       */
+/*   Updated: 2025/03/24 17:20:28 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int	main(int ac, char **av)
 {
 	t_fractal	fractal;
 
+	if (ac != 2 && ac != 4)
+		instruction();
 	if (ft_strcmp(av[1], "Mandelbrot") == 0 && ac == 2)
 		param_initializing_mandelbrot(&fractal);
 	else if (ft_strcmp(av[1], "Julia") == 0 && ac == 4)

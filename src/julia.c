@@ -6,7 +6,7 @@
 /*   By: mohabid <mohabid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/21 11:15:39 by mohabid           #+#    #+#             */
-/*   Updated: 2025/03/22 15:58:13 by mohabid          ###   ########.fr       */
+/*   Updated: 2025/03/24 22:24:48 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	param_initializing_julia(t_fractal *f, char *v1, char *v2)
 	f->julia.im = ft_atod(v2);
 	f->min.re = -2.0;
 	f->max.re = 2.0;
-	f->min.im = -1.5;
-	f->max.im = 1.5;
+	f->min.im = -2.0;
+	f->max.im = 2.0;
 	f->r = 50;
 	f->g = 50;
 	f->b = 50;

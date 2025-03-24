@@ -6,7 +6,7 @@
 /*   By: mohabid <mohabid@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 04:06:04 by mohabid           #+#    #+#             */
-/*   Updated: 2025/03/22 17:00:21 by mohabid          ###   ########.fr       */
+/*   Updated: 2025/03/24 23:04:13 by mohabid          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 # include "minilibx-linux/mlx.h"
 # define WIDTH 700
 # define HEIGHT 700
-# define MAX_ITER 200
+# define MAX_ITER 100
 # define ESC 65307
 # define ON_DESTROY 17
 # define MOUSE_UP 4
 # define MOUSE_DOWN 5
+# define ZOOM_FACTOR 0.8
 
 typedef struct s_complex
 {
@@ -75,4 +76,5 @@ void	param_initializing_julia(t_fractal *f, char *v1, char *v2);
 void	create_julia(t_fractal *f);
 /*   events.c   */
 int		zoom(int key, int x, int y, t_fractal *f);
+void	exit_with_error(const char *msg);
 #endif
